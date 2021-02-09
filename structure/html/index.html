@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../styles/css/index.css"/>
     <title>My Gallery</title>
   </head>
   <body>
-    <header> <img src="../../assets/profilePhoto.png" alt="Rodney Cotton"/>
-      <h1>Rodney Cotton</h1>
-      <h2>Helsinki, Finland </h2>
-      <ul>
-        <li> <strong>100 </strong>
-          <p>Posts</p>
+    <header class="profile"><img class="profile__image--rounded" src="../../assets/profilePhoto.png" alt="Rodney Cotton"/>
+      <h1 class="profile__username">Rodney Cotton</h1>
+      <h2 class="profile__location">Helsinki, Finland </h2>
+      <ul class="profile__statistics">
+        <li class="statistics__item"><strong class="statistics__number">100 </strong>
+          <p class="statistics__category">Posts</p>
         </li>
-        <li> <strong>2.242 </strong>
-          <p>Follower</p>
+        <li class="statistics__item"><strong class="statistics__number">2.242 </strong>
+          <p class="statistics__category">Follower</p>
         </li>
-        <li> <strong>1.432 </strong>
-          <p>Following</p>
+        <li class="statistics__item"><strong class="statistics__number">1.432 </strong>
+          <p class="statistics__category">Following</p>
         </li>
       </ul>
     </header>
-    <main><img src="../../assets/photo1.png" alt="null"/><img src="../../assets/photo2.png" alt="null"/><img src="../../assets/photo3.png" alt="null"/><img src="../../assets/photo4.png" alt="null"/><img src="../../assets/photo5.png" alt="null"/><img src="../../assets/photo6.png" alt="null"/>
+    <main class="profile__publications">
+      <section><img class="profile__image--rounded" src="../../assets/photo1.png" alt="photo1.png"/><img class="profile__image--rounded" src="../../assets/photo2.png" alt="photo2.png"/><img class="profile__image--rounded" src="../../assets/photo3.png" alt="photo3.png"/><img class="profile__image--rounded" src="../../assets/photo4.png" alt="photo4.png"/><img class="profile__image--rounded" src="../../assets/photo5.png" alt="photo5.png"/><img class="profile__image--rounded" src="../../assets/photo6.png" alt="photo6.png"/>
+      </section>
     </main>
     <footer>
       <address>

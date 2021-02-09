@@ -1,11 +1,11 @@
-header 
-        img(src="../../assets/profilePhoto.png", alt="Rodney Cotton")
-        h1 Rodney Cotton
-        h2 Helsinki, Finland 
+header(class="profile")
+        img(src="../../assets/profilePhoto.png", alt="Rodney Cotton" class="profile__image--rounded")
+        h1(class="profile__username") Rodney Cotton
+        h2(class="profile__location") Helsinki, Finland 
         -var social= [ { number: 100, category: "Posts" }, { number: 2.242, category: "Follower" }, { number: 1.432, category: "Following" } ]
     
-        ul
+        ul(class="profile__statistics")
             each data in social
-                li 
-                    strong #{data.number} 
-                    p #{data.category}
+                li(class="statistics__item")
+                    strong(class="statistics__number") #{data.number} 
+                    p(class="statistics__category") #{data.category}
