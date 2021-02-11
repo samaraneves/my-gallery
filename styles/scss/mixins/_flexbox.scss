@@ -6,6 +6,36 @@
     display: flex;
 }
 
+@mixin flex-direction($direction) {
+    @if $direction==row-reverse {
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: horizontal;
+        -moz-box-direction: reverse;
+        -moz-box-orient: horizontal;
+    }
+    @else if $direction==column {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -moz-box-direction: normal;
+        -moz-box-orient: vertical;
+    }
+    @else if $direction==column-reverse {
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: vertical;
+        -moz-box-direction: reverse;
+        -moz-box-orient: vertical;
+    }
+    @else {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -moz-box-orient: horizontal;
+    }
+    -webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
 @mixin justify-content($value) {
     @if $value==flex-start {
         -webkit-box-pack: start;

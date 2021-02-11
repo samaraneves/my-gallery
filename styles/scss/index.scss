@@ -1,8 +1,118 @@
+@import 'mixins/_flexbox';
 $white: #fff;
 $gray: #A9A9A9;
 $gray-dark: #BDBDBD;
 $gray-light: #E5E5E5;
 $black: #4E5150;
+$font-main: 'Montserrat',
+sans-serif;
+$title-weight: 600;
+$breakpoint-to-desktop: 1024px;
 body {
     background-color: $white;
+    font-family: $font-main;
+}
+
+h1,
+h2 {
+    margin: 1rem 0 0;
+    font-weight: $title-weight;
+}
+
+.profile {
+    padding: 2rem;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+}
+
+.profile__username {
+    font-size: 1.3rem;
+    color: $black;
+}
+
+.profile__location {
+    font-size: 1rem;
+    color: $gray;
+}
+
+.profile__image {
+    width: 100%;
+    cursor: pointer;
+    &--small {
+        width: 156px;
+    }
+    &--rounded {
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+}
+
+.profile__username {
+    font-size: 1.3rem;
+    color: $black;
+}
+
+.profile__location {
+    font-size: 1rem;
+    color: $gray;
+}
+
+.profile__publications {
+    width: 100%;
+    min-width: 320px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.profile__image {
+    width: 100%;
+    cursor: pointer;
+    &--small {
+        width: 156px;
+    }
+    &--rounded {
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+}
+
+.profile__statistics {
+    width: auto;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    @include flexbox;
+    @include flex-direction(column);
+    .statistics__item {
+        text-align: center;
+        padding: 1rem 1.5rem;
+        background-color: $gray-light;
+        margin: .5rem 0;
+        border-radius: .4rem;
+        -webkit-border-radius: .4rem;
+        -moz-border-radius: .4rem;
+        -ms-border-radius: .4rem;
+        -o-border-radius: .4rem;
+        .statistics__number {
+            font-weight: $title-weight;
+            color: $black;
+        }
+        .statistics__category {
+            margin: 0;
+            color: $gray-dark;
+        }
+    }
+    @media(min-width: 350px) {
+        @include flex-direction(row);
+        .statistics__item {
+            margin: 0 .5rem;
+        }
+    }
 }
