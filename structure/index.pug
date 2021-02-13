@@ -4,10 +4,12 @@ html(lang="pt-br")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="../../styles/css/index.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
         title My Gallery
     body
         include includes/_header.pug 
         include includes/_main.pug
-        footer
-            address
+        footer(class="profile__footer")
+            address(class="profile__address")
                 p Samara Neves @ DevChallenges.io 

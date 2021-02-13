@@ -4,10 +4,12 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../../styles/css/index.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <title>My Gallery</title>
   </head>
   <body>
-    <header class="profile"><img class="profile__image--rounded" src="../../assets/profilePhoto.png" alt="Rodney Cotton"/>
+    <header class="profile"><img class="profile__image profile__image--rounded profile__image--small" src="../../assets/profilePhoto.png" alt="Rodney Cotton"/>
       <h1 class="profile__username">Rodney Cotton</h1>
       <h2 class="profile__location">Helsinki, Finland </h2>
       <ul class="profile__statistics">
@@ -23,11 +25,11 @@
       </ul>
     </header>
     <main class="profile__publications">
-      <section><img class="profile__image--rounded" src="../../assets/photo1.png" alt="photo1.png"/><img class="profile__image--rounded" src="../../assets/photo2.png" alt="photo2.png"/><img class="profile__image--rounded" src="../../assets/photo3.png" alt="photo3.png"/><img class="profile__image--rounded" src="../../assets/photo4.png" alt="photo4.png"/><img class="profile__image--rounded" src="../../assets/photo5.png" alt="photo5.png"/><img class="profile__image--rounded" src="../../assets/photo6.png" alt="photo6.png"/>
+      <section class="profile__posts"><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo1.png" alt="photo1.png"/><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo2.png" alt="photo2.png"/><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo3.png" alt="photo3.png"/><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo4.png" alt="photo4.png"/><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo5.png" alt="photo5.png"/><img class="profile__image profile__image--rounded profile__image--effect" src="../../assets/photo6.png" alt="photo6.png"/>
       </section>
     </main>
-    <footer>
-      <address>
+    <footer class="profile__footer">
+      <address class="profile__address">
         <p>Samara Neves @ DevChallenges.io </p>
       </address>
     </footer>

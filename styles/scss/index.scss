@@ -11,6 +11,7 @@ $breakpoint-to-desktop: 1024px;
 body {
     background-color: $white;
     font-family: $font-main;
+    margin: 0;
 }
 
 h1,
@@ -64,13 +65,18 @@ h2 {
 .profile__publications {
     width: 100%;
     min-width: 320px;
-    max-width: 650px;
+    max-width: 750px;
     margin: auto;
+}
+
+.profile__posts {
+    padding: 0 1rem;
 }
 
 .profile__image {
     width: 100%;
     cursor: pointer;
+    transition: 1s;
     &--small {
         width: 156px;
     }
@@ -80,6 +86,10 @@ h2 {
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+    }
+    &--effect:hover {
+        opacity: .5;
+        transition: 1s;
     }
 }
 
@@ -115,4 +125,11 @@ h2 {
             margin: 0 .5rem;
         }
     }
+}
+
+.profile__address {
+    margin: 0;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.8rem;
 }
